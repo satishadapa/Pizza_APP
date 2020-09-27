@@ -3,23 +3,23 @@
     <section class="section">
         <div class="container">
 
-            <b-table :data="orders" default-sort="status">
+            <b-table :data="orders">
                 <template slot-scope="orders">
-                    <b-table-column field="id" label="ID" width="40" sortable numeric>
+                    <b-table-column field="id" label="ID" width="40">
                         {{ orders.row.id }}
                     </b-table-column>
 
-                    <b-table-column field="customerName" label="customer Name" sortable>
+                    <b-table-column field="customerName" label="customer Name">
                         {{ orders.row.customerName }}
                     </b-table-column>
-                    <b-table-column field="NumberofItems" label="Number of Items" sortable>
+                    <b-table-column field="NumberofItems" label="Number of Items">
                         {{ orders.row.NumberofItems }}
                     </b-table-column>
-                    <b-table-column field="order" label="Order Item" sortable>
+                    <b-table-column field="order" label="Order Item">
                         {{ orders.row.order }}
                     </b-table-column>
 
-                    <b-table-column field="status" label="status" sortable>
+                    <b-table-column field="status" label="status">
                         {{ orders.row.status }}
                     </b-table-column>
 
